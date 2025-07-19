@@ -1,6 +1,7 @@
-# Faça um programa que o usuário informe seu salário e nós acrescentemos 15% de aumento
+# Faça um programa que leia o valor informado em graus °C em °F
 
-salario = float(input('Informe o valor do seu salário: '))
-aumento = (salario*15)/100
+celsius = float(input('Informa a temperatura atual em Celsius: '))
 
-print('O valor do seu salário com reajuste de 15% é igual a {:.2f}'.format(salario+aumento))
+farenheit = (celsius*1.8)+32
+
+print('A temperatura de {}°C corresponde a {}°F'.format(celsius, farenheit))

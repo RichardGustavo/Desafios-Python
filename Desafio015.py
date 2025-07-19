@@ -1,8 +1,8 @@
-# Crie um programa que calcule o valor do aluguel de um carro, sabendo que sua diária custa R$60,00 e R$0,15 por KM rodado
+# Crie um programa que leia um número qualquer e mostre a parte inteira (Ex: O número 6.127 tem sua parte inteira 6)
 
-diaria = int(input('Você alugou o carro por quanto dias? '))
-kilometragram = float(input('Quantos kilometros você rodou com o carro? '))
+from math import trunc
+numero = float(input('Digite um número quebrado qualquer: '))
 
-despesa = (diaria*60) + (kilometragram*0.15)
+truncar = trunc(numero)
 
-print('O valor total a pagar será de R${}'.format(despesa))
+print('O número {} tem sua parte inteira de {}'.format(numero, truncar))

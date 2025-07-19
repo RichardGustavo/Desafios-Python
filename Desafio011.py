@@ -1,8 +1,6 @@
-# Crie um programa que o usuário informe a altura e largura de uma parede e nós definimos quanto de tinta será necessária para pintar essa parede, lembrando que cada litro de tinta pinta 2m² da parede
+# Faça um programa que leia o preço de um produto e o calcule com um desconto de 5%
 
-altura = float(input('Informa a altura de sua parede: '))
-largura = float(input('Informa a largura de sua parede: '))
+preco = float(input('Informe o preço do seu produto: '))
+desconto = (preco*5)/100
 
-area = largura * altura
- 
-print('Será necessário {:.2f} litros de tinta para pintar sua parede'.format(area/2))
+print('O preço do seu produto com 5% de desconto será de {:.2f}'.format(preco-desconto))

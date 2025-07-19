@@ -1,13 +1,6 @@
-# Faça uma lista aleatória que mostre uma ordem sequencial.
+from playsound import playsound
 
-import random
+playsound(r'C:\Users\Acer Predator\Desktop\DataSciencie\SoundHelix-Song-1.mp3')
 
-nomes = ('João', 'José', 'Maria', 'Cesar')
 
-lista_nomes = list(nomes)
-
-random.shuffle(lista_nomes)
-
-print('A ordem sequencial para apresentação dos projetos será {}'.format(lista_nomes))
-
-# Esse código foi praticamente feito com ajuda externa. Eu entendi o conceito, mas o uso da sintaxe e os métodos, também pesquisei externamente.
+# Pesquisa e código totalmente feitos externamente.

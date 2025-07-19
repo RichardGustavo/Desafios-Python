@@ -1,6 +1,8 @@
-# Crie um programa que converta o valor de reais para dólar
+# Crie um programa que o usuário informe a altura e largura de uma parede e nós definimos quanto de tinta será necessária para pintar essa parede, lembrando que cada litro de tinta pinta 2m² da parede
 
-real = float(input('Quanto de real voce gostaria de converter? '))
-conversao = real/3.27
+altura = float(input('Informa a altura de sua parede: '))
+largura = float(input('Informa a largura de sua parede: '))
 
-print('O valor em dólar é US${:.2f}'.format(conversao))
+area = largura * altura
+ 
+print('Será necessário {:.2f} litros de tinta para pintar sua parede'.format(area/2))

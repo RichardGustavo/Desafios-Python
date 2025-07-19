@@ -1,6 +1,7 @@
-# Mostre um programa que leia um número e mostre seu dobro, triplo e raiz quadrada
+# Faça um programa que leia duas notas de um aluno, calcule e mostre sua média
 
-numero = float(input('Digite um número: '))
+nota1 = int(input(('Qual sua primeira nota?: ')))
+nota2 = int(input(('Qual sua segunda nota?: ')))
+media = (nota1+nota2)/2
 
-print('O dobro de {} eh {}, seu triplo eh {} e sua raiz quadrada eh {}'.format(numero, numero*2, numero*3, numero**(1/2)))
-
+print('A média de suas notas é igual a {:.2f}'.format(media))

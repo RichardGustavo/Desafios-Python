@@ -1,6 +1,6 @@
-# Faça um programa que leia o preço de um produto e o calcule com um desconto de 5%
+# Faça um programa que o usuário informe seu salário e nós acrescentemos 15% de aumento
 
-preco = float(input('Informe o preço do seu produto: '))
-desconto = (preco*5)/100
+salario = float(input('Informe o valor do seu salário: '))
+aumento = (salario*15)/100
 
-print('O preço do seu produto com 5% de desconto será de {:.2f}'.format(preco-desconto))
+print('O valor do seu salário com reajuste de 15% é igual a {:.2f}'.format(salario+aumento))

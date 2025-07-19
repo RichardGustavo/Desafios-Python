@@ -1,11 +1,16 @@
-# Faça Pitagoras
+# Faça o usuário digitar um ângulo qualquer e o programa informe seu seno, cosseno e tangente
 
-from math import hypot
+import math
 
-n1 = int(input('Digite o valor do cateto oposto: '))
-n2 = int(input('Digite o valor do cateto adjascente: '))
+angulo = float(input('Digite um valor para um angulo qualquer: '))
 
-hipotenusa = hypot(n1, n2)
-print('O valor da hipotenusa é igual a {:.2f}'.format(hipotenusa))
+angulo_rad = math.radians(angulo)
 
-# Nesse exemplo eu apenas importei o métido Hypot
+seno = math.sin(angulo_rad)
+cosseno = math.cos(angulo_rad)
+tangente = math.tan(angulo_rad)
+
+print('O valor de seno é {:.4f}, cosseno é {:.4f}, e tangente é {:.2f}'.format(seno, cosseno, tangente))
+
+
+# Para esse código precisei de ajuda externa, pesquisei que precisava receber o valor da variável ângulo e converter para radianos

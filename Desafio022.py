@@ -1,16 +1,22 @@
 """
-Crie um programa que leia o nome completo de uma pessoa e mostre:
-1 - O nome com todas as letras maiúsculas
-2 - O nome com todas as letras minúsculas
-3 - Quantas letras ao todo, sem considerar espaços
-4 - Quantas letras tem o primeiro nome
+Faça um programa que leia um número de 0 a 9999 e diga o seguinte:
+Ex: 1834
+unidade: 4
+dezena: 3
+centana: 8
+milhar: 1
 """
 
-nome = input('Digite seu nome: ')
-new_name = nome.replace(" ", "")
-split_name = nome.split()[0]
+numero = int(input('Informe um número: '))
+u = numero // 1 % 10
+d = numero // 10 % 10
+c = numero // 100 % 10
+m = numero // 1000 % 10
 
-print(nome.upper())
-print(nome.lower())
-print(len(new_name))
-print(len(split_name))  
+print('Analisando o número {}'.format(numero))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
+
+# Código feito com explicação em aula.

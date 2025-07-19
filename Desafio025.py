@@ -1,13 +1,16 @@
-# Crie um programa que leia o nome da pessoa e veja se ela possui Silva no nome, independete do lugar
+"""
+Faça um programa em que o usuário escreva qualquer coisa
+conte quantas vezes a aparece a letra "A"
+mostre em que posição ela aparece por primeiro
+mostre em que posição ela aparece por último
+"""
 
-nome = str(input('Digite seu nome completo: '))
+frase_qualquer = str(input("Digite qualquer coisa: "))
 
-verificar_nome = ('Silva' in nome)
+lower = frase_qualquer.lower()
 
-if verificar_nome == True:
-    print('Seu nome possui Silva no nome')
-else:
-    print('Seu nome não possui Silva nome')
+print('A letra "A" aparece apenas', lower.count('a'), 'vez(es)')
+print('A primeira vez que a letra "A" aparece é na posição número', lower.find('a'))
+print('A última vez que a letra "A" aparece é na posição número', lower.rfind('a'))
 
-# Programa feito sem ajuda externa, mesmo sabendo que dá pra melhorar e alterar algumas coisas que ainda nao aprendi.
-
+# Estou conseguindo me adaptar aos métodos de uso e manipulação de string cada vez melhor.

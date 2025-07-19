@@ -1,8 +1,11 @@
-# Crie um programa que leia um número qualquer e mostre a parte inteira (Ex: O número 6.127 tem sua parte inteira 6)
+# Faça Pitagoras
 
-from math import trunc
-numero = float(input('Digite um número quebrado qualquer: '))
+from math import hypot
 
-truncar = trunc(numero)
+n1 = int(input('Digite o valor do cateto oposto: '))
+n2 = int(input('Digite o valor do cateto adjascente: '))
 
-print('O número {} tem sua parte inteira de {}'.format(numero, truncar))
+hipotenusa = hypot(n1, n2)
+print('O valor da hipotenusa é igual a {:.2f}'.format(hipotenusa))
+
+# Nesse exemplo eu apenas importei o métido Hypot

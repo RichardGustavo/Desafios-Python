@@ -1,15 +1,13 @@
-# Escreva um programa em que leia o nome de uma cidade e verifique se ela começa com 'Santo'
+# Crie um programa que leia o nome da pessoa e veja se ela possui Silva no nome, independete do lugar
 
-cidade = str(input("Digite o nome da sua cidade: "))
+nome = str(input('Digite seu nome completo: '))
 
-print(cidade.find("Santo"))
+verificar_nome = ('Silva' in nome)
 
-if cidade.split()[0] == "Santo":
-    print('Sua cidade começa com a palavra "Santo"')
-elif cidade.split()[0] == "santo":
-    print('Sua cidade começa com a palavra "Santo"')
+if verificar_nome == True:
+    print('Seu nome possui Silva no nome')
 else:
-    print('Sua cidade não começa com a palavra "Santo"')
+    print('Seu nome não possui Silva nome')
 
+# Programa feito sem ajuda externa, mesmo sabendo que dá pra melhorar e alterar algumas coisas que ainda nao aprendi.
 
-# Código feito totalmente sem ajuda externa.

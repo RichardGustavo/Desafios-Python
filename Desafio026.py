@@ -1,16 +1,15 @@
 """
-Faça um programa em que o usuário escreva qualquer coisa
-conte quantas vezes a aparece a letra "A"
-mostre em que posição ela aparece por primeiro
-mostre em que posição ela aparece por último
+Faça um programa que leia o nome inteiro de uma pessoa e mostre o primeiro e o
+último nome separadamente
 """
 
-frase_qualquer = str(input("Digite qualquer coisa: "))
+nome = str(input("Digite seu nome completo: "))
 
-lower = frase_qualquer.lower()
+split_nome = nome.split()
+ultimo_nome = len(split_nome) -1
 
-print('A letra "A" aparece apenas', lower.count('a'), 'vez(es)')
-print('A primeira vez que a letra "A" aparece é na posição número', lower.find('a'))
-print('A última vez que a letra "A" aparece é na posição número', lower.rfind('a'))
+print("Seu primeiro nome é {}".format(split_nome[0]))
+print("Seu último nome é {}".format(split_nome[ultimo_nome]))
 
-# Estou conseguindo me adaptar aos métodos de uso e manipulação de string cada vez melhor.
+
+# Precisei de ajuda externa para a ultima linha do código
